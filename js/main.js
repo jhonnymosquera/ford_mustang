@@ -1,18 +1,16 @@
-class Btns {
+class BtnChangeColorCar {
 	constructor(color) {
 		this.color = color;
-		this.btn = document.querySelector(`.btn-${color}`);
 		this.car = document.querySelector('#car');
-		this.btn.addEventListener('click', () => this.changeCarColor());
-	}
-
-	changeCarColor() {
-		car.setAttribute('src', `/img/veiculos/car-${this.color}.png`);
-		car.setAttribute('alt', `car ${this.color}`);
+		this.btn = document.querySelector(`.btn-${color}`);
+		this.btn.addEventListener('click', () => {
+			car.setAttribute('src', `/img/veiculos/car-${this.color}.png`);
+			car.setAttribute('alt', `car ${this.color}`);
+		});
 	}
 }
 
-const blue = new Btns('blue');
-const black = new Btns('black');
-const red = new Btns('red');
-const white = new Btns('white');
+const blue = new BtnChangeColorCar('blue');
+const black = new BtnChangeColorCar('black');
+const red = new BtnChangeColorCar('red');
+const white = new BtnChangeColorCar('white');
