@@ -5,16 +5,15 @@ const btnBlack = document.querySelector('.btn-black');
 const btnRed = document.querySelector('.btn-red');
 const btnWhite = document.querySelector('.btn-white');
 
-function changeCar(carColor) {
-	car.setAttribute('src', `/img/veiculos/car-${carColor}.png`);
-	car.setAttribute('alt', `car ${carColor}`);
-}
+const changeCarColor = (btn, color) =>
+	btn.addEventListener('click', () => {
+		car.setAttribute('src', `/img/veiculos/car-${color}.png`);
+		car.setAttribute('alt', `car ${color}`);
+	});
 
-function addEventClick(btn, color) {
 	btn.addEventListener('click', () => changeCar(color));
 }
-
-addEventClick(btnBlue, 'blue');
-addEventClick(btnBlack, 'black');
-addEventClick(btnRed, 'red');
-addEventClick(btnWhite, 'white');
+changeCarColor(btnBlue, 'blue');
+changeCarColor(btnBlack, 'black');
+changeCarColor(btnRed, 'red');
+changeCarColor(btnWhite, 'white');
