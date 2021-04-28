@@ -11,8 +11,6 @@ const changeCarColor = (btn, color) =>
 		car.setAttribute('alt', `car ${color}`);
 	});
 
-	btn.addEventListener('click', () => changeCar(color));
-}
 changeCarColor(btnBlue, 'blue');
 changeCarColor(btnBlack, 'black');
 changeCarColor(btnRed, 'red');
