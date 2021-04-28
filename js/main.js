@@ -1,17 +1,18 @@
-const car = document.querySelector('#car');
+class Btns {
+	constructor(color) {
+		this.color = color;
+		this.btn = document.querySelector(`.btn-${color}`);
+		this.car = document.querySelector('#car');
+		this.btn.addEventListener('click', () => this.changeCarColor());
+	}
 
-const btnBlue = document.querySelector('.btn-blue');
-const btnBlack = document.querySelector('.btn-black');
-const btnRed = document.querySelector('.btn-red');
-const btnWhite = document.querySelector('.btn-white');
+	changeCarColor() {
+		car.setAttribute('src', `/img/veiculos/car-${this.color}.png`);
+		car.setAttribute('alt', `car ${this.color}`);
+	}
+}
 
-const changeCarColor = (btn, color) =>
-	btn.addEventListener('click', () => {
-		car.setAttribute('src', `/img/veiculos/car-${color}.png`);
-		car.setAttribute('alt', `car ${color}`);
-	});
-
-changeCarColor(btnBlue, 'blue');
-changeCarColor(btnBlack, 'black');
-changeCarColor(btnRed, 'red');
-changeCarColor(btnWhite, 'white');
+const blue = new Btns('blue');
+const black = new Btns('black');
+const red = new Btns('red');
+const white = new Btns('white');
