@@ -1,0 +1,147 @@
+/* Media Querys*/
+
+$base-color: #0056a3;
+
+@media (max-width: 1690px) {
+	.main {
+		.cars {
+			div {
+				img {
+					margin-left: -150px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1450px) {
+	.main {
+		.description {
+			h2 {
+				font-size: 600%;
+			}
+
+			.button {
+				max-width: 450px;
+				height: 50px;
+				margin-top: 20px;
+				font-size: 200%;
+				letter-spacing: 14px;
+				padding-left: 5px;
+			}
+		}
+
+		.cars {
+			div {
+				img {
+					margin-left: -180px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1360px) {
+	.main {
+		.description {
+			h2 {
+				font-size: 500%;
+			}
+
+			.button {
+				font-size: 150%;
+				letter-spacing: 14px;
+			}
+		}
+
+		.cars {
+			div {
+				img {
+					margin-left: -250px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	.main {
+		.description {
+			.button {
+				font-size: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1176px) {
+	.main {
+		.description {
+			h2 {
+				font-size: 400%;
+			}
+
+			.button {
+				width: 250px;
+				letter-spacing: 8px;
+			}
+		}
+
+		.cars {
+			div {
+				img {
+					width: 800px;
+					margin-left: -200px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.main {
+		.description {
+			h2 {
+				font-size: 400%;
+			}
+
+			.button {
+				width: 250px;
+				letter-spacing: 8px;
+			}
+		}
+
+		.cars {
+			div {
+				img {
+					width: 650px;
+					margin-left: -150px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 924px) {
+	.main {
+		.description {
+			h2 {
+				font-size: 300%;
+			}
+
+			.button {
+				width: 200px;
+				letter-spacing: 5px;
+			}
+		}
+
+		.cars {
+			div {
+				img {
+					width: 550px;
+					margin-left: -120px;
+				}
+			}
+		}
+	}
+}

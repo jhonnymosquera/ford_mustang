@@ -1,0 +1,250 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url("../img/pics/fondo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  padding: 2% 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav {
+  width: 50%;
+  padding-right: 2%;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  transition: transform 300ms;
+}
+.header nav ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #010101;
+  transition: all 300ms;
+}
+.header nav ul li a:hover {
+  color: #0056a3;
+}
+.header nav ul li:hover {
+  transform: scale(1.5, 1.5);
+}
+.header .bars .bar {
+  background: #fff;
+  height: 10px;
+  margin-bottom: 5px;
+}
+.header .bars .b1 {
+  width: 100px;
+}
+.header .bars .b2 {
+  width: 80px;
+  margin-left: 20px;
+}
+.header .bars .b3 {
+  width: 60px;
+  margin-left: 40px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.main .description {
+  flex-grow: 1;
+  max-width: 50%;
+}
+.main .description h2 {
+  font-size: 700%;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+.main .description h2 span {
+  font-family: "Montserrat";
+  color: #0056a3;
+}
+.main .description p {
+  width: 70%;
+  text-align: justify;
+}
+.main .description .button {
+  max-width: 470px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 200%;
+  letter-spacing: 18px;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #0056a3;
+  color: #fff;
+}
+.main .cars {
+  max-width: 50%;
+  flex-grow: 1;
+  text-align: center;
+}
+.main .cars button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+}
+.main .cars div img {
+  width: 950px;
+  margin-left: -280px;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-black {
+  background-color: black;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+/* Media Querys*/
+@media (max-width: 1690px) {
+  .main .cars div img {
+    margin-left: -150px;
+  }
+}
+@media (max-width: 1450px) {
+  .main .description h2 {
+    font-size: 600%;
+  }
+  .main .description .button {
+    max-width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 200%;
+    letter-spacing: 14px;
+    padding-left: 5px;
+  }
+  .main .cars div img {
+    margin-left: -180px;
+  }
+}
+@media (max-width: 1360px) {
+  .main .description h2 {
+    font-size: 500%;
+  }
+  .main .description .button {
+    font-size: 150%;
+    letter-spacing: 14px;
+  }
+  .main .cars div img {
+    margin-left: -250px;
+  }
+}
+@media (max-width: 1280px) {
+  .main .description .button {
+    font-size: 100%;
+  }
+}
+@media (max-width: 1176px) {
+  .main .description h2 {
+    font-size: 400%;
+  }
+  .main .description .button {
+    width: 250px;
+    letter-spacing: 8px;
+  }
+  .main .cars div img {
+    width: 800px;
+    margin-left: -200px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .description h2 {
+    font-size: 400%;
+  }
+  .main .description .button {
+    width: 250px;
+    letter-spacing: 8px;
+  }
+  .main .cars div img {
+    width: 650px;
+    margin-left: -150px;
+  }
+}
+@media (max-width: 924px) {
+  .main .description h2 {
+    font-size: 300%;
+  }
+  .main .description .button {
+    width: 200px;
+    letter-spacing: 5px;
+  }
+  .main .cars div img {
+    width: 550px;
+    margin-left: -120px;
+  }
+}
+/* Mobile */
+@media (max-width: 800px) {
+  body {
+    background-image: url("/img/pics/fondoH.png");
+  }
+
+  .header nav {
+    position: absolute;
+    width: 100%;
+  }
+  .header nav ul {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 90vh;
+  }
+  .header nav ul li {
+    width: 100%;
+  }
+  .header nav ul li a:hover {
+    color: #fff;
+  }
+  .header nav ul li:hover {
+    transform: none;
+  }
+  .header .bars {
+    position: absolute;
+    right: 10%;
+  }
+  .header .bars .bar {
+    background: #0056a3;
+  }
+
+  .main {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

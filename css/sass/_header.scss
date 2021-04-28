@@ -1,0 +1,65 @@
+// Header
+
+$base-color: #0056a3;
+$black-color: #010101;
+
+.header {
+	width: 100%;
+	height: 10vh;
+	padding: 2% 0px;
+	display: flex;
+	justify-content: space-between;
+
+	// Menu
+
+	nav {
+		width: 50%;
+		padding-right: 2%;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				transition: transform 300ms;
+
+				a {
+					font-size: 20px;
+					font-weight: bold;
+					color: $black-color;
+					transition: all 300ms;
+				}
+
+				a:hover {
+					color: $base-color;
+				}
+			}
+
+			li:hover {
+				transform: scale(1.5, 1.5);
+			}
+		}
+	}
+
+	.bars {
+		.bar {
+			background: #fff;
+			height: 10px;
+			margin-bottom: 5px;
+		}
+
+		.b1 {
+			width: 100px;
+		}
+
+		.b2 {
+			width: 80px;
+			margin-left: 20px;
+		}
+
+		.b3 {
+			width: 60px;
+			margin-left: 40px;
+		}
+	}
+}

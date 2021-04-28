@@ -1,0 +1,47 @@
+/* Mobile */
+
+$base-color: #0056a3;
+
+@media (max-width: 800px) {
+	body {
+		background-image: url('/img/pics/fondoH.png');
+	}
+
+	.header {
+		nav {
+			position: absolute;
+			width: 100%;
+
+			ul {
+				width: 100%;
+				flex-direction: column;
+				margin-top: 10vh;
+				height: 90vh;
+
+				li {
+					width: 100%;
+
+					a:hover {
+						color: #fff;
+					}
+				}
+
+				li:hover {
+					transform: none;
+				}
+			}
+		}
+
+		.bars {
+			position: absolute;
+			right: 10%;
+			.bar {
+				background: $base-color;
+			}
+		}
+	}
+
+	.main {
+		display: none;
+	}
+}
