@@ -112,3 +112,9 @@ $base-color: #0056a3;
 		}
 	}
 }
+
+@media (max-width: 380px) {
+	footer {
+		font-size: 120%;
+	}
+}

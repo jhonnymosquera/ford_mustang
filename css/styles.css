@@ -104,7 +104,7 @@ body {
   padding-left: 1%;
   letter-spacing: 18px;
   border-radius: 15px;
-  border: none;
+  border: 2px solid #010101;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #0056a3;
@@ -142,10 +142,10 @@ body {
 footer {
   width: 80%;
   margin: 0px auto;
-  font-size: 180%;
+  font-size: 150%;
 }
 footer img {
-  width: 300px;
+  width: 90%;
 }
 
 /* Media Querys*/
@@ -315,6 +315,11 @@ footer img {
   .main .cars div img {
     width: 99%;
     margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    font-size: 120%;
   }
 }
 
