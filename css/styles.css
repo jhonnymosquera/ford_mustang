@@ -312,10 +312,6 @@ footer img {
   .main .cars div {
     margin: 0px auto;
   }
-  .main .cars div img {
-    width: 99%;
-    margin-left: 0px;
-  }
 }
 @media (max-width: 380px) {
   footer {
