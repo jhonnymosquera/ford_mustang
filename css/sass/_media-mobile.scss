@@ -10,16 +10,29 @@ $base-color: #0056a3;
 	.header {
 		nav {
 			position: absolute;
-			width: 100%;
+			width: 80%;
+			opacity: 0;
+			left: -1000px;
+			transition: all 500ms;
 
 			ul {
 				width: 100%;
 				flex-direction: column;
+				justify-content: space-evenly;
 				margin-top: 10vh;
-				height: 90vh;
+				height: 85vh;
+				background-color: #0000ff;
 
 				li {
 					width: 100%;
+
+					a {
+						display: block;
+						width: 100%;
+						text-align: center;
+						font-size: 180%;
+						color: white;
+					}
 
 					a:hover {
 						color: #fff;
@@ -32,16 +45,70 @@ $base-color: #0056a3;
 			}
 		}
 
+		.menu {
+			display: block;
+			opacity: 1;
+			left: 10%;
+		}
+
 		.bars {
+			display: block-;
 			position: absolute;
 			right: 10%;
-			.bar {
-				background: $base-color;
+
+			.bar1 {
+				display: none;
+			}
+
+			.bar2 {
+				display: block;
+
+				cursor: pointer;
+				transition: all 300ms;
+			}
+		}
+
+		.bars {
+			.menu-b2 {
+				width: 100px;
+				margin-left: 0px;
+			}
+			.menu-b3 {
+				width: 100px;
+				margin-left: 0px;
 			}
 		}
 	}
 
 	.main {
-		display: none;
+		display: block;
+		margin-top: 0px;
+
+		.description {
+			max-width: 100%;
+
+			h2 {
+				margin-bottom: 5%;
+			}
+
+			.button {
+				margin-bottom: 10%;
+			}
+		}
+
+		.cars {
+			max-width: 100%;
+			.btn-white {
+				border: 1px solid black;
+			}
+
+			div {
+				margin: 0px auto;
+				img {
+					width: 99%;
+					margin-left: 0px;
+				}
+			}
+		}
 	}
 }

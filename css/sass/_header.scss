@@ -42,8 +42,15 @@ $black-color: #010101;
 	}
 
 	.bars {
-		.bar {
+		.bar1 {
 			background: #fff;
+			height: 10px;
+			margin-bottom: 5px;
+		}
+
+		.bar2 {
+			display: none;
+			background: $base-color;
 			height: 10px;
 			margin-bottom: 5px;
 		}
