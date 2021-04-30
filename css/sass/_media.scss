@@ -120,6 +120,12 @@ $base-color: #0056a3;
 			}
 		}
 	}
+
+	footer {
+		img {
+			width: 300px;
+		}
+	}
 }
 
 @media (max-width: 924px) {

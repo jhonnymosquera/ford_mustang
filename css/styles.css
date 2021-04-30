@@ -212,6 +212,10 @@ footer img {
     width: 650px;
     margin-left: -150px;
   }
+
+  footer img {
+    width: 300px;
+  }
 }
 @media (max-width: 924px) {
   .main .description h2 {
